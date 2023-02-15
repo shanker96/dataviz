@@ -1,0 +1,1232 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Employee HR$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Birth Date" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="Date" />
+            <Field name="Business Entity ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="V_String" />
+            <Field name="Current Flag" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="V_String" />
+            <Field name="Gender" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="V_String" />
+            <Field name="Hire Date" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="Date" />
+            <Field name="Job Title" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="V_String" />
+            <Field name="Marital Status" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="V_String" />
+            <Field name="PTO" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="Double" />
+            <Field name="Reason" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee HR$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 1a</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="222" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff(DateTimeToday(),[Birth Date],&quot;years&quot;)" field="Age" size="4" type="Float" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Age = DateTimeDiff(DateTimeToday(),[Birth Date],"years")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Department$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Department$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Entity ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Department$`" type="V_String" />
+            <Field name="Department ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Department$`" type="V_String" />
+            <Field name="Department" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Department$`" type="V_String" />
+            <Field name="Start Date" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Department$`" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="222" y="54" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 1b
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="246" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 2a
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeDiff(DateTimeToday(),[Start Date],&quot;years&quot;)" field="Years of Service" size="4" type="Float" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Years of Service = DateTimeDiff(DateTimeToday(),[Start Date],"years")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Contact Data$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Contact Data$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Entity ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Contact Data$`" type="V_String" />
+            <Field name="First Name" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Contact Data$`" type="V_String" />
+            <Field name="Last Name" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Contact Data$`" type="V_String" />
+            <Field name="Middle Name" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Contact Data$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="246" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 2b
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="438" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 3a
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="246" y="438" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[ Step 3b
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Last Name]+&quot;, &quot;+[First Name]+&quot; &quot;+[Middle Name]" field="Employee Name" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Employee Name = [Last Name]+", "+[First Name]+" "+[Middle Name]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="First Name" selected="False" />
+            <SelectField field="Last Name" selected="False" />
+            <SelectField field="Middle Name" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="438" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[ Step 3c
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee Pay History$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Employee Pay History$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Entity ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee Pay History$`" type="V_String" />
+            <Field name="Salary Change Date" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee Pay History$`" type="Date" />
+            <Field name="Salary" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Employee Pay History$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Business Entity ID" action="GroupBy" rename="Business Entity ID" />
+            <SummarizeField field="Salary Change Date" action="Max" rename="Max_Salary Change Date" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Business Entity ID" />
+            <Field field="Max_Salary Change Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Business Entity ID" />
+            <Field field="Salary Change Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Max_Salary Change Date" selected="False" input="Left_" />
+                <SelectField field="Right_Business Entity ID" selected="False" rename="Right_Business Entity ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="618" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="Business Entity ID" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="Business Entity ID" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="Business Entity ID" />
+            </JoinInfo>
+            <JoinInfo connection="#4">
+              <Field field="Business Entity ID" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#2_Business Entity ID" selected="False" rename="Input_#2_Business Entity ID" />
+                <SelectField field="Input_#3_Business Entity ID" selected="False" rename="Input_#3_Business Entity ID" />
+                <SelectField field="Input_#4_Business Entity ID" selected="False" rename="Input_#4_Business Entity ID" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="630" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 4a
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="618" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Step 4b
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="342" y="654" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 4c</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="582" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Address$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Address ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="AddressLine1" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="AddressLine2" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="Country Region Code" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="State " size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="Postal Code" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="State Province Code" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="State Province ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+            <Field name="Territory ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Address$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="582" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Business Entity Address$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Business Entity Address$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Entity ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Business Entity Address$`" type="V_String" />
+            <Field name="Address ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Business Entity Address$`" type="V_String" />
+            <Field name="Address Type ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Business Entity Address$`" type="V_String" />
+            <Field name="Address Type" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Business Entity Address$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="798" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Address ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Address ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Address ID" selected="False" rename="Right_Address ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="606" y="306" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 5</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="438" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 6</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="498" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 8</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="606" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 7</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="918" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Business Entity ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Business Entity ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Business Entity ID" selected="False" rename="Right_Business Entity ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1038" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="978" y="378" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 9</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1218" y="426" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 11</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="930" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Sales Person Data$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Business Entity ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="V_String" />
+            <Field name="Modified Date" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="Date" />
+            <Field name="Sales Last Year" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="Double" />
+            <Field name="Territory ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="V_String" />
+            <Field name="Bonus" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="Double" />
+            <Field name="Commission Pct" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="Double" />
+            <Field name="Sales Quota" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="Double" />
+            <Field name="Sales YTD" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Person Data$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="930" y="486" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 10</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1170" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Business Entity ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Business Entity ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Business Entity ID" selected="False" rename="Right_Business Entity ID" input="Right_" />
+                <SelectField field="Right_Territory ID" selected="False" rename="Right_Territory ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1278" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1398" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="42" MaxRecords="">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\DV Homework Day 2 Employee Data Nagarajan.tde</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DV Homework Day 2 Employee Data Nagarajan.tde</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1398" y="414" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 12</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="942" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Production Company updated.xlsx
+Query=`Sales Orders$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sales Order Number" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="V_String" />
+            <Field name="Sales Person ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="V_String" />
+            <Field name="Ship Date" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="Date" />
+            <Field name="Ship Method ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="V_String" />
+            <Field name="Ship To Address ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="V_String" />
+            <Field name="Territory ID" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="V_String" />
+            <Field name="Freight" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="Double" />
+            <Field name="Status" size="255" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="V_String" />
+            <Field name="Sales" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="Double" />
+            <Field name="Tax Amt" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="Double" />
+            <Field name="Total Due" source="File: C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\Production Company updated.xlsx|||`Sales Orders$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="942" y="690" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 13</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1158" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Business Entity ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Sales Person ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Sales Person ID" selected="False" input="Right_" />
+                <SelectField field="Right_Territory ID" selected="False" rename="Right_Territory ID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1290" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="42" MaxRecords="">C:\Users\Saubakkiya\Documents\FALL MOD B\Shanker_Alteryx\HW2\DV Homework Day 2 Sales Order Data Nagarajan.tde</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DV Homework Day 2 Sales Order Data Nagarajan.tde</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1158" y="618" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 14</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1290" y="618" width="60" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Step 15</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="29" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Join" />
+      <Destination ToolID="29" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Join" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="29" Connection="Left" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="29" Connection="Right" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="35" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="41" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="41" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="35" Connection="Join" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="35" Connection="Left" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="35" Connection="Right" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Join" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DV Homework Day 2 Alteryx Nagarajan</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="94ef6202-f15b-4aa6-8831-a1b74fb27218" />
+      <Telemetry>
+        <PreviousWorkflowId value="a596f525-b3ec-4737-87f4-dbd7765a5af2" />
+        <OriginWorkflowId value="84ef0f91-43b6-4ccb-86f2-dda6f0d16a75" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
