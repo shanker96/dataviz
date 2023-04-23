@@ -18,6 +18,7 @@ To generate sales insights and key performance indicators (KPIs) to identify are
 
 ## Business Use Cases:
 - Identified key business use cases such as increasing sales revenue, reducing costs, and improving customer retention.
+
 - Conducted root cause analysis to identify the factors that were impacting sales performance.
 - Developed data-driven recommendations to address the identified issues and improve sales performance.
 
@@ -32,3 +33,6 @@ To generate sales insights and key performance indicators (KPIs) to identify are
 - Enabled better decision-making by providing stakeholders with timely and accurate sales insights and KPIs.
 - Increased collaboration between sales and other teams by providing a shared understanding of sales performance across the organization.
 - Improved data quality and consistency by integrating data from multiple sources using Alteryx.
+
+
+![Online Retail Dashboard](https://user-images.githubusercontent.com/20686097/233818741-a29caa65-94f0-4f1b-873b-d1585c4a53ae.png)
