@@ -6,25 +6,25 @@ To generate sales insights and key performance indicators (KPIs) to identify are
 ## Approach:
 
 ## Data Preparation and Cleansing:
-a. Collected data from various sources such as ERP systems, CRM systems, and sales databases.
-b. Performed data cleansing, data normalization, and data enrichment using Alteryx to ensure data accuracy and consistency.
-c. Created a master data set that integrated data from multiple sources to enable analysis and reporting.
+- Collected data from various sources such as ERP systems, CRM systems, and sales databases.
+- Performed data cleansing, data normalization, and data enrichment using Alteryx to ensure data accuracy and consistency.
+- Created a master data set that integrated data from multiple sources to enable analysis and reporting.
 
 ## Sales Insights and KPIs:
-a. Calculated Total Sales, Total Profit, Average Customer Lifetime Value, and Total Customer Money Spend to measure sales performance.
-b. Analyzed country-wise sales to identify potential opportunities for growth.
-c. Calculated monthly sales to track seasonal trends and identify peak sales periods.
-d. Identified the top 5 Sale stock to understand which products were driving sales.
+- Calculated Total Sales, Total Profit, Average Customer Lifetime Value, and Total Customer Money Spend to measure sales performance.
+- Analyzed country-wise sales to identify potential opportunities for growth.
+- Calculated monthly sales to track seasonal trends and identify peak sales periods.
+- Identified the top 5 Sale stock to understand which products were driving sales.
 
 ## Business Use Cases:
-a. Identified key business use cases such as increasing sales revenue, reducing costs, and improving customer retention.
-b. Conducted root cause analysis to identify the factors that were impacting sales performance.
-c. Developed data-driven recommendations to address the identified issues and improve sales performance.
+- Identified key business use cases such as increasing sales revenue, reducing costs, and improving customer retention.
+- Conducted root cause analysis to identify the factors that were impacting sales performance.
+- Developed data-driven recommendations to address the identified issues and improve sales performance.
 
 ## Visualization and Reporting:
-a. Developed interactive dashboards using Tableau to provide stakeholders with a comprehensive view of sales performance.
-b. Created data visualizations such as bar charts, line charts, and heat maps to enable data exploration and analysis.
-c. Automated reporting using Tableau to provide regular updates to stakeholders.
+- Developed interactive dashboards using Tableau to provide stakeholders with a comprehensive view of sales performance.
+- Created data visualizations such as bar charts, line charts, and heat maps to enable data exploration and analysis.
+- Automated reporting using Tableau to provide regular updates to stakeholders.
 
 ## Results:
 - The sales insights and analysis project helped the organization achieve the following outcomes:
